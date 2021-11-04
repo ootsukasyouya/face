@@ -1,3 +1,7 @@
-<h1><%= @user.name %>のページ</h1>
-<p>メールアドレス: <%= @user.email %></p>
-<%= link_to "投稿作成", new_picture_path %>
+<div class="contents">
+<ul>
+<li><%= @user.name %>のページ</li>
+<li><div class="col"><p>メールアドレス: <%= @user.email %></p></div></li>
+<li><div class="col"><%= link_to "投稿作成", new_picture_path %></div></li>
+</ul>
+</div>
