@@ -5,4 +5,5 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
   before_validation { email.downcase! }
   has_secure_password
+  has_many :pictures
 end
