@@ -11,7 +11,7 @@
   </head>
 
   <body>
-  
+
     <header>
     <% flash.each do |key, value| %>
       <%= content_tag(:div, value, class: "#{key}") %>
@@ -24,7 +24,9 @@
        <li> <%= link_to "Login", new_session_path %></li>
       <% end %>
     </header>
+    <div class="container">
     <%= yield %>
+    </div>
     <footer>
       <p>FACEBOO</p>
     </footer>
